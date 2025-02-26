@@ -1,0 +1,821 @@
+[
+  {
+    "name": "ls",
+    "description": "List directory contents",
+    "category": "Filesystem",
+    "alphabet": "l",
+    "example": "ls -l"
+  },
+  {
+    "name": "cd",
+    "description": "Change directory",
+    "category": "Navigation",
+    "alphabet": "c",
+    "example": "cd /path/to/directory"
+  },
+  {
+    "name": "pwd",
+    "description": "Print working directory",
+    "category": "Navigation",
+    "alphabet": "p",
+    "example": "pwd"
+  },
+  {
+    "name": "mkdir",
+    "description": "Make directory",
+    "category": "Filesystem",
+    "alphabet": "m",
+    "example": "mkdir new_directory"
+  },
+  {
+    "name": "rm",
+    "description": "Remove files or directories",
+    "category": "Filesystem",
+    "alphabet": "r",
+    "example": "rm file.txt"
+  },
+  {
+    "name": "grep",
+    "description": "Search for a pattern in files",
+    "category": "Searching",
+    "alphabet": "g",
+    "example": "grep 'pattern' file.txt"
+  },
+  {
+    "name": "man",
+    "description": "Display manual pages for commands",
+    "category": "Documentation",
+    "alphabet": "m",
+    "example": "man ls"
+  },
+  {
+    "name": "cp",
+    "description": "Copy files and directories",
+    "category": "Filesystem",
+    "alphabet": "c",
+    "example": "cp source.txt destination.txt"
+  },
+  {
+    "name": "mv",
+    "description": "Move or rename files and directories",
+    "category": "Filesystem",
+    "alphabet": "m",
+    "example": "mv old_name.txt new_name.txt"
+  },
+  {
+    "name": "touch",
+    "description": "Create empty files or update timestamps",
+    "category": "Filesystem",
+    "alphabet": "t",
+    "example": "touch new_file.txt"
+  },
+  {
+    "name": "cat",
+    "description": "Concatenate and display file content",
+    "category": "Filesystem",
+    "alphabet": "c",
+    "example": "cat file.txt"
+  },
+  {
+    "name": "less",
+    "description": "View file content with pagination",
+    "category": "Filesystem",
+    "alphabet": "l",
+    "example": "less file.txt"
+  },
+  {
+    "name": "head",
+    "description": "Display the first few lines of a file",
+    "category": "Filesystem",
+    "alphabet": "h",
+    "example": "head file.txt"
+  },
+  {
+    "name": "tail",
+    "description": "Display the last few lines of a file",
+    "category": "Filesystem",
+    "alphabet": "t",
+    "example": "tail file.txt"
+  },
+  {
+    "name": "find",
+    "description": "Search for files and directories",
+    "category": "Searching",
+    "alphabet": "f",
+    "example": "find . -name '*.txt'"
+  },
+  {
+    "name": "awk",
+    "description": "Pattern scanning and processing language",
+    "category": "Awk Tutorial",
+    "alphabet": "a",
+    "example": "awk '{print $1}' file.txt"
+  },
+  {
+    "name": "awk 'BEGIN {print \"Start\"} {print $0} END {print \"End\"}'",
+    "description": "Awk: Print 'Start', each line, and 'End'",
+    "category": "Awk Tutorial",
+    "alphabet": "a",
+    "example": "awk 'BEGIN {print \"Start\"} {print $0} END {print \"End\"}' file.txt"
+  },
+  {
+    "name": "awk '$3 == \"value\" {print $1, $2}'",
+    "description": "Awk: Print columns 1 and 2 if column 3 equals 'value'",
+    "category": "Awk Tutorial",
+    "alphabet": "a",
+    "example": "awk '$3 == \"value\" {print $1, $2}' file.txt"
+  },
+  {
+    "name": "awk '{sum += $1} END {print sum}'",
+    "description": "Awk: Calculate the sum of the first column",
+    "category": "Awk Tutorial",
+    "alphabet": "a",
+    "example": "awk '{sum += $1} END {print sum}' file.txt"
+  },
+    {
+    "name": "sudo",
+    "description": "Execute a command as the superuser",
+    "category": "System",
+    "alphabet": "s",
+    "example": "sudo apt-get update"
+  },
+  {
+    "name": "apt-get",
+    "description": "Package management utility (Debian/Ubuntu)",
+    "category": "System",
+    "alphabet": "a",
+    "example": "sudo apt-get install package_name"
+  },
+  {
+    "name": "yum",
+    "description": "Package management utility (Fedora/CentOS/RHEL)",
+    "category": "System",
+    "alphabet": "y",
+    "example": "sudo yum install package_name"
+  },
+  {
+    "name": "pacman",
+    "description": "Package management utility (Arch Linux)",
+    "category": "System",
+    "alphabet": "p",
+    "example": "sudo pacman -S package_name"
+  },
+  {
+    "name": "ps",
+    "description": "Display running processes",
+    "category": "System",
+    "alphabet": "p",
+    "example": "ps aux"
+  },
+  {
+    "name": "top",
+    "description": "Display dynamic real-time view of running processes",
+    "category": "System",
+    "alphabet": "t",
+    "example": "top"
+  },
+  {
+    "name": "kill",
+    "description": "Terminate a process",
+    "category": "System",
+    "alphabet": "k",
+    "example": "kill process_id"
+  },
+  {
+    "name": "ping",
+    "description": "Test network connectivity",
+    "category": "Networking",
+    "alphabet": "p",
+    "example": "ping google.com"
+  },
+  {
+    "name": "ssh",
+    "description": "Secure Shell - remote login program",
+    "category": "Networking",
+    "alphabet": "s",
+    "example": "ssh user@host"
+  },
+  {
+    "name": "scp",
+    "description": "Secure copy - copy files between hosts over SSH",
+    "category": "Networking",
+    "alphabet": "s",
+    "example": "scp user@host:source_file destination_file"
+  },
+  {
+    "name": "wget",
+    "description": "Download files from the internet",
+    "category": "Networking",
+    "alphabet": "w",
+    "example": "wget https://example.com/file.zip"
+  },
+  {
+    "name": "curl",
+    "description": "Transfer data from or to a server",
+    "category": "Networking",
+    "alphabet": "c",
+    "example": "curl https://example.com"
+  },
+  {
+    "name": "ifconfig",
+    "description": "Configure network interfaces (deprecated, use 'ip' instead)",
+    "category": "Networking",
+    "alphabet": "i",
+    "example": "ifconfig"
+  },
+    {
+    "name": "ip",
+    "description": "Show / manipulate routing, devices, policy routing and tunnels",
+    "category": "Networking",
+    "alphabet": "i",
+    "example": "ip addr show"
+  },
+{
+    "name": "chmod",
+    "description": "Change file permissions",
+    "category": "Filesystem",
+    "alphabet": "c",
+    "example": "chmod 755 script.sh"
+  },
+  {
+    "name": "chown",
+    "description": "Change file owner and group",
+    "category": "Filesystem",
+    "alphabet": "c",
+    "example": "chown user:group file.txt"
+  },
+  {
+    "name": "tar",
+    "description": "Archive files and directories",
+    "category": "Filesystem",
+    "alphabet": "t",
+    "example": "tar -cvzf archive.tar.gz directory/"
+  },
+  {
+    "name": "gzip",
+    "description": "Compress files",
+    "category": "Filesystem",
+    "alphabet": "g",
+    "example": "gzip file.txt"
+  },
+  {
+    "name": "gunzip",
+    "description": "Decompress files compressed with gzip",
+    "category": "Filesystem",
+    "alphabet": "g",
+    "example": "gunzip file.txt.gz"
+  },
+  {
+    "name": "df",
+    "description": "Display disk space usage",
+    "category": "System",
+    "alphabet": "d",
+    "example": "df -h"
+  },
+  {
+    "name": "du",
+    "description": "Display file and directory space usage",
+    "category": "System",
+    "alphabet": "d",
+    "example": "du -sh directory/"
+  },
+  {
+    "name": "ln",
+    "description": "Create links between files",
+    "category": "Filesystem",
+    "alphabet": "l",
+    "example": "ln -s target_file link_name"
+  },
+  {
+    "name": "date",
+    "description": "Display or set the system date and time",
+    "category": "System",
+    "alphabet": "d",
+    "example": "date"
+  },
+  {
+    "name": "cal",
+    "description": "Display a calendar",
+    "category": "System",
+    "alphabet": "c",
+    "example": "cal"
+  },
+  {
+    "name": "whoami",
+    "description": "Display the current username",
+    "category": "System",
+    "alphabet": "w",
+    "example": "whoami"
+  },
+  {
+    "name": "passwd",
+    "description": "Change user password",
+    "category": "System",
+    "alphabet": "p",
+    "example": "passwd"
+  },
+    {
+    "name": "useradd",
+    "description": "Create a new user",
+    "category": "System",
+    "alphabet": "u",
+    "example": "sudo useradd newuser"
+    },
+    {
+        "name": "userdel",
+        "description": "Delete a user account",
+        "category": "System",
+        "alphabet": "u",
+        "example": "sudo userdel username"
+    },
+    {
+        "name": "groupadd",
+        "description": "Create a new group",
+        "category": "System",
+        "alphabet": "g",
+        "example": "sudo groupadd newgroup"
+    },
+    {
+        "name": "groupdel",
+        "description": "Delete a group",
+        "category": "System",
+        "alphabet": "g",
+        "example": "sudo groupdel groupname"
+    },
+    {
+        "name": "usermod",
+        "description": "Modify a user account",
+        "category": "System",
+        "alphabet": "u",
+        "example": "sudo usermod -aG groupname username"
+    },
+  {
+    "name": "history",
+    "description": "Display command history",
+    "category": "Shell",
+    "alphabet": "h",
+    "example": "history"
+  },
+  {
+    "name": "echo",
+    "description": "Display a line of text",
+    "category": "Shell",
+    "alphabet": "e",
+    "example": "echo \"Hello, world!\""
+  },
+  {
+    "name": "alias",
+    "description": "Create an alias for a command",
+    "category": "Shell",
+    "alphabet": "a",
+    "example": "alias la='ls -la'"
+  },
+  {
+    "name": "unalias",
+    "description": "Remove an alias",
+    "category": "Shell",
+    "alphabet": "u",
+    "example": "unalias la"
+  },
+  {
+    "name": "export",
+    "description": "Set environment variables",
+    "category": "Shell",
+    "alphabet": "e",
+    "example": "export VARIABLE=value"
+  },
+  {
+    "name": "source",
+    "description": "Execute commands from a file in the current shell",
+    "category": "Shell",
+    "alphabet": "s",
+    "example": "source script.sh"
+  },
+  {
+    "name": ".",
+    "description": "Execute commands from a file in the current shell (same as source)",
+    "category": "Shell",
+    "alphabet": "dot",
+    "example": ". script.sh"
+  },
+  {
+    "name": "set",
+    "description": "Display or set shell variables and options",
+    "category": "Shell",
+    "alphabet": "s",
+    "example": "set -o vi"
+  },
+  {
+    "name": "unset",
+    "description": "Unset a shell variable",
+    "category": "Shell",
+    "alphabet": "u",
+    "example": "unset VARIABLE"
+  },
+  {
+    "name": "which",
+    "description": "Locate a command",
+    "category": "Searching",
+    "alphabet": "w",
+    "example": "which ls"
+  },
+    {
+        "name": "whereis",
+        "description": "Locate the binary, source, and manual page files for a command",
+        "category": "Searching",
+        "alphabet": "w",
+        "example": "whereis ls"
+    },
+    {
+        "name": "type",
+        "description": "Display information about command type",
+        "category": "Shell",
+        "alphabet": "t",
+        "example": "type ls"
+    },
+    {
+        "name": "wc",
+        "description": "Print newline, word, and byte counts for each file",
+        "category": "Filesystem",
+        "alphabet": "w",
+        "example": "wc file.txt"
+    },
+    {
+        "name": "sort",
+        "description": "Sort lines of text files",
+        "category": "Filesystem",
+        "alphabet": "s",
+        "example": "sort file.txt"
+    },
+    {
+        "name": "uniq",
+        "description": "Report or omit repeated lines",
+        "category": "Filesystem",
+        "alphabet": "u",
+        "example": "sort file.txt | uniq"
+    },
+    {
+        "name": "cut",
+        "description": "Remove sections from each line of files",
+        "category": "Filesystem",
+        "alphabet": "c",
+        "example": "cut -d',' -f1 file.csv"
+    },
+    {
+        "name": "paste",
+        "description": "Merge lines of files",
+        "category": "Filesystem",
+        "alphabet": "p",
+        "example": "paste file1.txt file2.txt"
+    },
+    {
+        "name": "tr",
+        "description": "Translate or delete characters",
+        "category": "Filesystem",
+        "alphabet": "t",
+        "example": "tr 'a-z' 'A-Z' < file.txt"
+    },
+    {
+        "name": "sed",
+        "description": "Stream editor for text manipulation",
+        "category": "Filesystem",
+        "alphabet": "s",
+        "example": "sed 's/old/new/g' file.txt"
+    },
+    {
+        "name": "diff",
+        "description": "Compare files line by line",
+        "category": "Filesystem",
+        "alphabet": "d",
+        "example": "diff file1.txt file2.txt"
+    },
+    {
+        "name": "vim",
+        "description": "Vi IMproved, a text editor",
+        "category": "Editors",
+        "alphabet": "v",
+        "example": "vim file.txt"
+    },
+    {
+        "name": "nano",
+        "description": "Nano's ANOther editor, an enhanced free Pico clone",
+        "category": "Editors",
+        "alphabet": "n",
+        "example": "nano file.txt"
+    },
+    {
+        "name": "emacs",
+        "description": "GNU Emacs text editor",
+        "category": "Editors",
+        "alphabet": "e",
+        "example": "emacs file.txt"
+    },
+    {
+        "name": "head",
+        "description": "Output the first part of files",
+        "category": "Filesystem",
+        "alphabet": "h",
+        "example": "head -n 10 file.txt"
+    },
+    {
+        "name": "tail",
+        "description": "Output the last part of files",
+        "category": "Filesystem",
+        "alphabet": "t",
+        "example": "tail -n 10 file.txt"
+    },
+    {
+        "name": "nl",
+        "description": "Number lines of files",
+        "category": "Filesystem",
+        "alphabet": "n",
+        "example": "nl file.txt"
+    },
+      {
+    "name": "iptables",
+    "description": "Administration tool for IPv4 packet filtering and NAT",
+    "category": "Networking",
+    "alphabet": "i",
+    "example": "sudo iptables -L"
+  },
+  {
+    "name": "netstat",
+    "description": "Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships",
+    "category": "Networking",
+    "alphabet": "n",
+    "example": "netstat -tulnp"
+  },
+    {
+        "name": "ss",
+        "description": "Another utility to investigate sockets",
+        "category": "Networking",
+        "alphabet": "s",
+        "example": "ss -tulnp"
+    },
+    {
+        "name": "route",
+        "description": "Show / manipulate the IP routing table",
+        "category": "Networking",
+        "alphabet": "r",
+        "example": "route -n"
+    },
+    {
+        "name": "tcpdump",
+        "description": "Dump traffic on a network",
+        "category": "Networking",
+        "alphabet": "t",
+        "example": "sudo tcpdump -i eth0"
+    },
+    {
+        "name": "traceroute",
+        "description": "Print the route packets trace to network host",
+        "category": "Networking",
+        "alphabet": "t",
+        "example": "traceroute google.com"
+    },
+    {
+        "name": "dig",
+        "description": "DNS lookup utility",
+        "category": "Networking",
+        "alphabet": "d",
+        "example": "dig google.com"
+    },
+    {
+        "name": "nslookup",
+        "description": "Query Internet name servers interactively",
+        "category": "Networking",
+        "alphabet": "n",
+        "example": "nslookup google.com"
+    },
+    {
+        "name": "host",
+        "description": "DNS lookup utility",
+        "category": "Networking",
+        "alphabet": "h",
+        "example": "host google.com"
+    },
+    {
+        "name": "nmap",
+        "description": "Network exploration tool and security / port scanner",
+        "category": "Networking",
+        "alphabet": "n",
+        "example": "nmap -sV scanme.nmap.org"
+    },
+    {
+        "name": "ufw",
+        "description": "Program for managing a netfilter firewall",
+        "category": "Networking",
+        "alphabet": "u",
+        "example": "sudo ufw status"
+    },
+    {
+        "name": "free",
+        "description": "Display amount of free and used memory in the system",
+        "category": "System",
+        "alphabet": "f",
+        "example": "free -m"
+    },
+    {
+        "name": "uptime",
+        "description": "Tell how long the system has been running",
+        "category": "System",
+        "alphabet": "u",
+        "example": "uptime"
+    },
+    {
+        "name": "uname",
+        "description": "Print system information",
+        "category": "System",
+        "alphabet": "u",
+        "example": "uname -a"
+    },
+    {
+        "name": "lsblk",
+        "description": "List block devices",
+        "category": "System",
+        "alphabet": "l",
+        "example": "lsblk"
+    },
+    {
+        "name": "lspci",
+        "description": "List all PCI devices",
+        "category": "System",
+        "alphabet": "l",
+        "example": "lspci"
+    },
+    {
+        "name": "lsusb",
+        "description": "List USB devices",
+        "category": "System",
+        "alphabet": "l",
+        "example": "lsusb"
+    },
+    {
+        "name": "lscpu",
+        "description": "Display information about the CPU architecture",
+        "category": "System",
+        "alphabet": "l",
+        "example": "lscpu"
+    },
+    {
+        "name": "mount",
+        "description": "Mount a filesystem",
+        "category": "System",
+        "alphabet": "m",
+        "example": "sudo mount /dev/sda1 /mnt"
+    },
+    {
+        "name": "umount",
+        "description": "Unmount file systems",
+        "category": "System",
+        "alphabet": "u",
+        "example": "sudo umount /mnt"
+    },
+    {
+        "name": "shutdown",
+        "description": "Schedule a time for the system to be powered down",
+        "category": "System",
+        "alphabet": "s",
+        "example": "sudo shutdown -h now"
+    },
+    {
+        "name": "reboot",
+        "description": "Reboot the system",
+        "category": "System",
+        "alphabet": "r",
+        "example": "sudo reboot"
+    },
+    {
+        "name": "poweroff",
+        "description": "Power off the system",
+        "category": "System",
+        "alphabet": "p",
+        "example": "sudo poweroff"
+    },
+        {
+        "name": "crontab",
+        "description": "Schedule a command to run at a later time",
+        "category": "System",
+        "alphabet": "c",
+        "example": "crontab -e"
+    },
+    {
+        "name": "jobs",
+        "description": "List active jobs",
+        "category": "Shell",
+        "alphabet": "j",
+        "example": "jobs"
+    },
+    {
+        "name": "fg",
+        "description": "Bring a job to the foreground",
+        "category": "Shell",
+        "alphabet": "f",
+        "example": "fg %1"
+    },
+    {
+        "name": "bg",
+        "description": "Send a job to the background",
+        "category": "Shell",
+        "alphabet": "b",
+        "example": "bg %1"
+    },
+      {
+        "name": "nohup",
+        "description": "Run a command immune to hangups, with output to a non-tty",
+        "category": "Shell",
+        "alphabet": "n",
+        "example": "nohup command &"
+    },
+    {
+        "name": "disown",
+        "description": "Remove a job from the shell's job control",
+        "category": "Shell",
+        "alphabet": "d",
+        "example": "disown %1"
+    },
+    {
+        "name": "watch",
+        "description": "Execute a program periodically, showing output fullscreen",
+        "category": "System",
+        "alphabet": "w",
+        "example": "watch -n 1 'ls -l'"
+    },
+    {
+        "name": "clear",
+        "description": "Clear the terminal screen",
+        "category": "Shell",
+        "alphabet": "c",
+        "example": "clear"
+    },
+    {
+        "name": "exit",
+        "description": "Exit the shell",
+        "category": "Shell",
+        "alphabet": "e",
+        "example": "exit"
+    },
+    {
+        "name": "help",
+        "description": "Display help for shell builtins",
+        "category": "Shell",
+        "alphabet": "h",
+        "example": "help cd"
+    },
+    {
+        "name": ">",
+        "description": "Redirect output to a file",
+        "category": "Redirection",
+        "alphabet": "gt",
+        "example": "ls > file.txt"
+    },
+    {
+        "name": ">>",
+        "description": "Append output to a file",
+        "category": "Redirection",
+        "alphabet": "ggt",
+        "example": "ls >> file.txt"
+    },
+    {
+        "name": "<",
+        "description": "Redirect input from a file",
+        "category": "Redirection",
+        "alphabet": "lt",
+        "example": "sort < file.txt"
+    },
+    {
+        "name": "|",
+        "description": "Pipe output of one command to input of another",
+        "category": "Redirection",
+        "alphabet": "pipe",
+        "example": "ls | grep file"
+    },
+    {
+        "name": "tee",
+        "description": "Read from standard input and write to standard output and files",
+        "category": "Redirection",
+        "alphabet": "t",
+        "example": "ls | tee file.txt"
+    },
+    {
+        "name": "xargs",
+        "description": "Build and execute command lines from standard input",
+        "category": "Shell",
+        "alphabet": "x",
+        "example": "find . -name '*.txt' | xargs grep 'pattern'"
+    },
+     {
+        "name": "!",
+        "description": "Refer to a command in history",
+        "category": "Shell",
+        "alphabet": "exclamation",
+        "example": "!! # Execute the last command"
+     },
+    {
+        "name": "fc",
+        "description": "Fix command - edit and re-execute a previous command",
+        "category": "Shell",
+        "alphabet": "f",
+        "example": "fc -s old=new last_command"
+    }
+]

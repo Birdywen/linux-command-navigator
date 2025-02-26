@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+    color: #00cc00; /* Darker green */
+    font-family: 'Source Code Pro', monospace;
+    background-color: #000;
+    background-image: linear-gradient(rgba(0, 204, 0, 0.1), transparent); /* Subtle gradient */
+}
+
+#app {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.alphabet-buttons button {
+    background-color: green;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.alphabet-buttons button:hover {
+    background-color: #00cc00;
+}
+
+.command {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 204, 0, 0.7); /* Subtle glow effect */
+    transition: box-shadow 0.3s ease;
+}
+
+.command:hover {
+    box-shadow: 0 0 12px rgba(0, 204, 0, 0.9); /* Brighter glow on hover */
+}
+
+.command-name {
+    font-weight: bold;
+    font-size: 1.1em;
+
+}
+
+.command-description {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.command-example {
+    font-style: italic;
+    color: #90EE90;
+}
+
+.category {
+    cursor: pointer;
+    padding: 5px;
+    margin:2px;
+    border-radius: 3px;
+    display: inline-block;
+
+}
+
+.category:hover{
+     background-color: #00cc00;
+}
+
+.tip {
+    margin-bottom: 5px;
+}

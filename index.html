@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Command Finder</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <h1>Linux Command Finder</h1>
+       <h2>Alphabet</h2>
+        <div class="alphabet-buttons">
+            <button v-for="letter in 'abcdefghijklmnopqrstuvwxyz'" :key="letter" @click="selectedLetter = letter; selectedCategory = null">
+                {{ letter }}
+            </button>
+            <button @click="selectedLetter = ''; selectedCategory = null">Reset</button>
+        </div>
+        <h2>Categories</h2>
+        <ul>
+            <li v-for="category in categories" :key="category" class="category" @click="selectedCategory = category; selectedLetter = ''">
+                {{ category }}
+            </li>
+        </ul>
+        <button @click="selectedCategory = null">Reset Category</button>
+        <h2>Commands</h2>
+        <div v-for="command in filteredCommands" :key="command.name" class="command">
+            <div class="command-name">{{ command.name }}</div>
+            <div class="command-description">{{ command.description }}</div>
+            <div class="command-example">{{ command.example }}</div>
+        </div>
+
+        <h2>Linux & Bash Tips</h2>
+        <ul>
+            <li v-for="(tip, index) in tips" :key="index" class="tip">
+                {{ tip.tip }}
+            </li>
+        </ul>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>

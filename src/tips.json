@@ -1,0 +1,53 @@
+[
+  {
+    "tip": "Use Ctrl+R to search your command history interactively."
+  },
+  {
+    "tip": "Use 'history | grep keyword' to find specific commands in your history."
+  },
+  {
+    "tip": "Chain commands with '&&' to execute the second command only if the first one succeeds."
+  },
+  {
+    "tip": "Chain commands with '||' to execute the second command only if the first one fails."
+  },
+  {
+    "tip": "Use '!' followed by the beginning of a command to execute the most recent command starting with that string (e.g., '!ls')."
+  },
+  {
+    "tip": "Use '!!' to refer to the previous command."
+  },
+    {
+    "tip": "Use aliases to create shortcuts for frequently used commands."
+  },
+  {
+    "tip": "Use 'Ctrl+C' to stop a running command."
+  },
+  {
+    "tip": "Use 'Ctrl+Z' to pause a running command and send it to the background."
+  },
+  {
+    "tip": "Use 'fg' to bring a background process to the foreground."
+  },
+  {
+    "tip": "Use 'bg' to send a paused process to the background."
+  },
+    {
+    "tip": "Use the 'man' command to access the manual pages for commands."
+  },
+  {
+    "tip": "Use 'apropos keyword' to search for commands related to a keyword."
+  },
+  {
+    "tip": "Use 'whatis command' for a very brief description of a command."
+  },
+    {
+    "tip": "Use tab completion to quickly complete commands and filenames."
+  },
+  {
+    "tip": "Use 'Ctrl+D' to signal the end of input (EOF) to a program or to exit the current shell."
+  },
+    {
+    "tip": "Use 'clear' or 'Ctrl+L' to clear the terminal screen."
+  }
+]
